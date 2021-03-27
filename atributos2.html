@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parrafo{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        class para estilos atraves de CSS
+        id = identificador para javascript o anclas de navegación, no se peude repetir
+        tittle = Muestra una descripción del elemento en un mensaje tooltip
+        data = guardar algún valor en etiqueta html
+
+
+    -->
+    <p class="parrafo">Clases</p> 
+    <p id="parrafo">Identificadores a través de JS</p>
+    <p title="Este es un ejemplo del atributo tittle">Título tooltip</p>
+    <p id="p2" data-ejemplo="Datos de ejemplo">Datos pesados en la etiqueta</p>
+    <script>
+        const p = document.getElementById('parrafo')
+        console.log(p.textContent)
+        const p2 = document.getElementById('p2')
+        console.log(p2.dataset.ejemplo)
+    </script>
+</body>
+</html>
